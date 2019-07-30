@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root "products#new"
+  get "/feedbacks" to: "feedbacks#new"
+  get "/catergories" to: "catergories#new"
+  get "/bill_details" to: "bill_details#new"
+  get "/bill" to: "bills#new"
+  get "/users" to: "users#new"
 end

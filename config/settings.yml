@@ -1,0 +1,6 @@
+VALID_EMAIL_REGEX: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+maxName: 200
+maxMail: 200
+minPass: 3
+maxComment: 400
+rate_value: %w(1 2 3 4 5)
