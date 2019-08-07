@@ -3,4 +3,5 @@ maxName: 200
 maxMail: 200
 minPass: 3
 maxComment: 400
-rate_value: %w(1 2 3 4 5)
+rate_value: (1 2 3 4 5)
+num: 10

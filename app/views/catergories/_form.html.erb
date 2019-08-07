@@ -1,0 +1,26 @@
+<%= form_for @catergory, class: "form-group" do |f| %>
+  <% if catergory.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %><%= t(".error")%></h2>
+      <ul>
+      <% catergory.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+  <div class="row">
+    <div class="col-md-1">
+      <%= f.submit "Submit", class: "btn btn-primary" %>
+    </div>
+    <div class="col-md-1">
+      <%= link_to t("catergories.form.back"), catergories_path,class: "btn btn-primary" %>
+    </div>
+    <%= link_to t("catergories.form.show"), @catergory,class: "btn btn-primary" %>
+  </div>
+<% end %>

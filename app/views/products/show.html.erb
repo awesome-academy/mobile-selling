@@ -1,0 +1,31 @@
+<% provide :title,@product.name %>
+<div class="container">
+ <div class="card">
+  <div class="container-fliud">
+   <div class="wrapper row">
+    <div class="preview col-md-6">
+      <div class="preview-pic tab-content">
+        <strong><%t(".image")%></strong>
+        <%= image_tag(@product.image_url, width: '100%') if @product.image.present? %>
+      </div>
+    </div>
+    <div class="details col-md-6">
+     <h3 class="product-title"><%= t ".infomation_product" %></h3>
+     <div class="rating">
+     <p class="product-description"><%= t ".status" %><%= @product.status %></p>
+     <h4 class="price"><%= t ".price" %><%= @product.price %></h4>
+     <p class="vote"><%= t ".discount" %><strong><%= @product.discount %></strong>
+      <strong>%</strong>
+     </p>
+     <h5 class="sizes"><%= t ".amout" %> <%= @product.amout %>
+     </h5>
+     <h5 class="colors"><strong><%= t ".color" %></strong><%= @product.color %><span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span> <span class="color green"></span> <span class="color blue"></span>
+     </h5>
+     <div class="action"> <a href="http://hocwebgiare.com/" target="_blank">            <button class="add-to-cart btn btn-default" type="button"><%= t ".buy" %></button>            </a> <a href="http://hocwebgiare.com/" target="_blank">            <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>            </a>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="col-md-6 col-md-offset-10"><%= link_to 'Edit', edit_product_path(@product),class: "btn btn-primary"  %>
+    <%= link_to t(".back") , products_path ,class: "btn btn-primary" %></div>

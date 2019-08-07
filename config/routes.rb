@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  root "products#new"
-  get "/feedbacks" to: "feedbacks#new"
-  get "/catergories" to: "catergories#new"
-  get "/bill_details" to: "bill_details#new"
-  get "/bill" to: "bills#new"
-  get "/users" to: "users#new"
+  root to: "products#index"
+  get "feedbacks/new"
+  get "bill_details/new"
+  get "bills/new"
+  get "users/new"
+
+  resources :products
+  resources :catergories
 end
