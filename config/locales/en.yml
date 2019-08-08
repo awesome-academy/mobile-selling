@@ -1,2 +1,58 @@
 en:
   hello: "Hello world"
+  Mobile_Selling: ".Mobile-Selling"
+  products:
+    show:
+      image: "Image: "
+      status: "Status: "
+      price: "Price: "
+      discount: "Discount: "
+      amout: "Amout: "
+      color: "Color: "
+      buy: "Buy Now"
+      back: "Back"
+    new:
+      creat_product: "Creat product"
+    index:
+      all_product: "All product"
+      name: "Name"
+      color: "Color"
+      price: "Price"
+      amout: "Amout"
+      image: "Image"
+      status: "Status"
+      discount: "Discount"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
+      sure?: "Are you sure?"
+    edit:
+      edit_product: "Edit product"
+    form:
+      error: "prohibited this product from being saved"
+      select_type: "Select type"
+      back: "Back"
+      show: "Show"
+      edit: "Edit"
+      submit: "Submit"
+  catergories:
+    show:
+      back: "Back"
+    new:
+      creat_catergory: "Creat catergory"
+    index:
+      new_catergory: " New Catergory"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
+    edit:
+      edit_catergory: "Edit catergory"
+    form:
+      error: "prohibited this product from being saved"
+      select_type: "Select type"
+      back: "Back"
+      show: "Show"
+      edit: "Edit"
+      submit: "Submit"
+
+

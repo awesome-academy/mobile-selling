@@ -13,7 +13,7 @@ gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "rails-i18n"
 gem "config"
-gem "bootstrap-sass", "3.3.7"
+gem "bootstrap-sass"
 gem "jquery-rails"
 gem "bcrypt", "3.1.12"
 gem "ffaker"

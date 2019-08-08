@@ -1,0 +1,24 @@
+<<% provide :title, t(".all_catergory") %>
+<table>
+  <thead>
+    <tr>
+      <th><%= t("name")%></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @catergory.each do |catergory| %>
+      <tr>
+        <td><%= catergory.name %></td>
+        <td><%= link_to t(".show"), catergory , class: "btn btn-primary" %></td>
+        <td><%= link_to t(".edit"), edit_catergory_path(catergory), class: "btn btn-primary" %></td>
+        <td><%= button_to t(".destroy"), catergory, method: :delete, data: { confirm: t(".sure?") }, class: "btn btn-primary" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t(".new_catergory"), new_catergory_path,class: "btn btn-primary" %>

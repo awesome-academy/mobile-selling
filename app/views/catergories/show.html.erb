@@ -1,0 +1,7 @@
+<% provide :title, @catergory.name %>
+<p>
+  <strong><%= t(".name")%> </strong>
+  <%= @catergory.name %>
+</p>
+<%= link_to t(".edit"), edit_catergory_path(@catergory),class: "btn btn-primary" %>
+<%= link_to t(".back"), catergories_path ,class: "btn btn-primary"%>
