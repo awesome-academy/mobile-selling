@@ -1,0 +1,14 @@
+<% provide :title,@product.name %>
+
+<p>
+  <strong><%= t(".product")%></strong>
+  <%= @line_item.product %>
+</p>
+
+<p>
+  <strong <%= t(".cart") %> </strong>
+  <%= @line_item.cart %>
+</p>
+
+<%= link_to t(".edit"), edit_line_item_path(@line_item) %> |
+<%= link_to t(".back"), line_items_path %>
