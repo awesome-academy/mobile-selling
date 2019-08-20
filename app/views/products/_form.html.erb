@@ -47,15 +47,10 @@
     <%= f.label :discount %>
     <%= f.number_field :discount , class: "form-control"%>
   </div>
-  <div class="row">
-    <div class="col-md-1">
-      <%= f.submit t("products.form.submit"), class: "btn btn-primary" %>
-    </div>
-    <div class="col-md-1">
-      <%= link_to t("products.form.show"), @product, class: "btn btn-primary" %>
-    </div>
-    <div class="col-md-1">
-      <%= button_to t("products.form.back"), products_path, class: "btn btn-primary" %>
-    </div>
+  <div class="col-md-6 col-md-offset-10">
+    <%= f.submit t("products.form.submit"), class: "btn btn-primary" %>
+    <%= link_to t("products.form.show"), @product, class: "btn btn-primary" %>
+    <%= link_to t("products.form.back"), products_path, class: "btn btn-primary" %>
   </div>
 <% end %>
+

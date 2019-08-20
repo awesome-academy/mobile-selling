@@ -1,0 +1,32 @@
+<div class="site-section" id="products-section">
+  <div class="container">
+    <div class="row mb-5 justify-content-center">
+      <div class="col-md-6 text-center">
+        <h3 class="section-sub-title"><%= t("home_page.index.popular") %></h3>
+        <h2 class="section-title mb-3"><%= t("home_page.index.our") %></h2>
+        <p><%= t("home_page.index.caption") %></p>
+      </div>
+    </div>
+    <div class="row">
+      <% @product.each do |product| %>
+        <div class="col-lg-4 col-md-6 mb-5">
+        <div class="product-item">
+          <figure>
+            <%= image_tag product.image_url, class: "img-responsive min-vw-40 "%></div>
+          </figure>
+          <div class="px-4">
+            <h3><%= product.name %></h3>
+            <div class="mb-3">
+              <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-usd"></span></a><%= product.price %></span>
+              <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-gift"></span></a> <%= product.discount %> %</span>
+            </div>
+              <p class="mb-4"><%= product.color %></p>
+            <div>
+            <a><%= button_to ' Cart', line_items_path(:product_id => product), class: "btn btn-black mr-1 rounded-0" %></a>
+            <a><%= link_to t(".View"), product, class: "btn btn-black btn-outline-black ml-1 rounded-0" %></a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+</div>
