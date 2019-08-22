@@ -5,7 +5,7 @@ class CreateBillDetails < ActiveRecord::Migration[5.2]
       t.string :payment_method
       t.float :price
       t.references :product, foreign_key: true
-      t.references :bill, foreign_key: true
+      t.references :cart, foreign_key: true
 
       t.timestamps
     end

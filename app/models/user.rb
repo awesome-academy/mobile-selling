@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :bills
+  has_many :carts
 
   enum role: [ :admin, :customer ]
   validates :username, presence: true, length: {maximum: Settings.maxName}

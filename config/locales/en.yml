@@ -1,6 +1,32 @@
 en:
+  home_page:
+    index:
+      popular: "Popular Products"
+      our: "Our Products"
+      caption: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam."
+      cart: "Cart"
+  layouts:
+    _footer:
+      about: "About Us"
+      quick_link: "Quick Links"
+      services: "Services"
+      Testimonials: "Testimonials"
+      Contact_Us: "Contact Us"
+      follow_Us: "Follow Us"
+    application:
+      Mobile_Selling: "Mobile Selling"
+  carts:
+    show:
+      empty_cart: "Empty cart"
+      sure?: "Are you sure?"
   hello: "Hello world"
   Mobile_Selling: ".Mobile-Selling"
+  line_items:
+    edit:
+      show: "Show"
+      back: "Back"
+    index:
+      new_line_items: "New"
   products:
     show:
       image: "Image: "
@@ -9,8 +35,11 @@ en:
       discount: "Discount: "
       amout: "Amout: "
       color: "Color: "
-      buy: "Buy Now"
+      cart: "Cart"
       back: "Back"
+      aswesome_product: "Awesome Products"
+      feature: "Featured Products"
+      caption: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam."
     new:
       creat_product: "Creat product"
     index:
@@ -54,5 +83,3 @@ en:
       show: "Show"
       edit: "Edit"
       submit: "Submit"
-
-

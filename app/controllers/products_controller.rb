@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :load_product, except: %i(new create edit update index)
+  before_action :load_product, except: %i(new create update index)
 
   def index
     @product = Product.page(params[:page]).per Settings.num
@@ -48,7 +48,7 @@ class ProductsController < ApplicationController
     end
 
     def load_product
-      @product = Product.find_by id: params[:id]
+      @product = Product.find(params[:id])
       return if @product
       flash[:danger] = t(".not_exits")
       redirect_to products_path
