@@ -1,0 +1,21 @@
+<% provide :title,Cart%>
+<h2><%= t(".cart")%></h2>
+<table>
+  <% @cart.line_items.each do |item| %>
+    <tr>
+      <td><%= item.quantity %> x </td>
+      <td><%= item.product.name %></td>
+      <td class="item_price"><%= number_to_currency(item.total_price) %></td>
+    </tr>
+  <% end %>
+
+  <tr class="total_line">
+    <td colspan="2"><%= t(".Total")%></td>
+    <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
+  </tr>
+</table>
+
+<%= button_to t(".empty_cart"),
+  @cart,
+  :method => :delete,
+  data: {:confirm => t(".sure?")}, class: "btn btn-black mr-1 rounded-0" %>

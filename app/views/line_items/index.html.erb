@@ -1,0 +1,28 @@
+<% provide :title, t(".all_line_items") %>
+<h1><%= t(".line_item")%></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t(".product")%></th>
+      <th><%=t(".cart")%></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @line_items.each do |line_item| %>
+      <tr>
+        <td><%= line_item.product %></td>
+        <td><%= line_item.cart %></td>
+        <td><%= link_to t(".show"), line_item %></td>
+        <td><%= link_to t(".edit"), edit_line_item_path(line_item) %></td>
+        <td><%= link_to t(".destroy"), line_item, method: :delete, data: { confirm: t(".sure?") } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t(".new_line_items"), new_line_item_path %>
