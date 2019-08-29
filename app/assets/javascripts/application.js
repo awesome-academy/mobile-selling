@@ -4,3 +4,11 @@
 //= require turbolinks
 //= require_tree .
 //=require bootstrap
+//=require owl.carousel.min.js
+//=require map.js
+//=require main.js
+//=require jquery.zoom.min.js
+//=require jquery.slicknav.min.js
+//=require jquery.nicescroll.min.js
+//=require jquery-ui.min.js
+//=require jquery-3.2.1.min.js

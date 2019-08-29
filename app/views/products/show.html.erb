@@ -30,7 +30,7 @@
           </div>
             <p>
               <div>
-                <a><%= button_to t(".cart"), line_items_path(:product_id => @product), class: "btn btn-black mr-1 rounded-0" %></a>
+                <a><%= button_to t(".cart"), line_items_path(:product_id => @product),:remote => true, class: "btn btn-black mr-1 rounded-0" %></a>
                 <a><%=link_to t(".back") , products_path, class: "btn btn-black btn-outline-black ml-1 rounded-0" %></a>
               </div>
             </p>

@@ -1,27 +1,75 @@
 <footer class="site-footer bg-white">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-5">
-            <h2 class="footer-heading mb-4"><%= t(".about") %></h2>
-            <p><%= t("home_page.index.caption") %></p>
+        <div class="col-lg-3 col-sm-6">
+          <div class="footer-widget about-widget">
+            <h2><%= t("layouts._footer.about")%></h2>
+            <p><%= t("layouts._footer.caption")%></p>
+            <img src="img/cards.png" alt="">
           </div>
-          <div class="col-md-3 ">
-            <h2 class="footer-heading mb-4"><%= t(".quick_link") %></h2>
-            <ul class="list-unstyled">
-              <li><a href="#"><%= t(".about") %></a></li>
-              <li><a href="#"><%= t(".services") %></a></li>
-              <li><a href="#"><%= t(".Testimonials") %></a></li>
-              <li><a href="#"><%= t(".Contact_Us")%></a></li>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="footer-widget about-widget">
+            <h2><%= t("layouts._footer.question")%></h2>
+            <ul>
+              <li><a href=""><%= t("layouts._footer.about")%></a></li>
+              <li><a href=""><%= t("layouts._footer.quick_link")%></a></li>
+              <li><a href=""><%= t("layouts._footer.services")%></a></li>
+              <li><a href=""><%= t("layouts._footer.Testimonials")%></a></li>
+              <li><a href=""<%= t("layouts._footer.Contact_Us")%></a></li>
+              <li><a href=""><%= t("layouts._footer.follow_Us")%></a></li>
+            </ul>
+            <ul>
+              <li><a href=""><%= t("layouts._footer.Partners")%></a></li>
+              <li><a href=""><%= t("layouts._footer.Bloggers")%></a></li>
+              <li><a href=""><%= t("layouts._footer.Support")%></a></li>
+              <li><a href=""><%= t("layouts._footer.tem")%></a></li>
+              <li><a href=""><%= t("layouts._footer.Press")%></a></li>
             </ul>
           </div>
-          <div class="col-md-4">
-            <h2 class="footer-heading mb-4"><%= t(".follow_Us")%></h2>
-            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="footer-widget about-widget">
+            <h2><%= t("layouts.footer.question")%></h2>
+            <div class="fw-latest-post-widget">
+              <div class="lp-item">
+                <div class="lp-thumb set-bg" data-setbg="img/blog-thumbs/1.jpg"></div>
+                <div class="lp-content">
+                  <h6><%= t("layouts._footer.shoe")%></h6>
+                  <span><%= t("layouts._footer.day")%> </span>
+                  <a href="#" class="readmore"><%= t("layouts._footer.more")%></a>
+                </div>
+              </div>
+              <div class="lp-item">
+                <div class="lp-thumb set-bg" data-setbg="img/blog-thumbs/2.jpg"></div>
+                <div class="lp-content">
+                  <h6><%= t("layouts._footer.trends")%></h6>
+                  <span><%= t("layouts._footer.day")%></span>
+                  <a href="#" class="readmore"><%= t("layouts._footer.more")%></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="footer-widget contact-widget">
+            <h2><%= t("layouts._footer.question")%></h2>
+            <div class="con-info">
+              <span>C.</span>
+              <p><%= t("layouts._footer.company")%></p>
+            </div>
+            <div class="con-info">
+              <span>B.</span>
+              <p><%= t("layouts._footer.address")%></p>
+            </div>
+            <div class="con-info">
+              <span>T.</span>
+              <p><%= t("layouts._footer.phone")%></p>
+            </div>
+            <div class="con-info">
+              <span>E.</span>
+              <p><%= t("layouts._footer.mail")%></p>
+            </div>
           </div>
         </div>
       </div>

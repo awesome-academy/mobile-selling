@@ -1,11 +1,15 @@
 en:
   home_page:
     index:
-      popular: "Popular Products"
-      our: "Our Products"
-      caption: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam."
+      latest: "LATEST PRODUCTS"
       cart: "Cart"
   layouts:
+    _header:
+      sign: "Sign in"
+      or: "Or"
+      create: "Create account"
+      Cart: "Shopping Cart"
+      blog: "Blog"
     _footer:
       about: "About Us"
       quick_link: "Quick Links"
@@ -13,6 +17,21 @@ en:
       Testimonials: "Testimonials"
       Contact_Us: "Contact Us"
       follow_Us: "Follow Us"
+      caption: "Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam frin-gilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem."
+      question: "Question"
+      Partners: "Partners"
+      Bloggers: "Bloggers"
+      Support: "Support"
+      tem: "Tem of you"
+      Press: "Press"
+      shoe: "what shoes to wear"
+      more: "Read More"
+      day: "Oct 21, 2018"
+      trends: "trends this year"
+      company: "Your Company Ltd"
+      address: "1481 Creekside Lane  Avila Beach, CA 93424, P.O. BOX 68 "
+      phone: "+53 345 7953 32453"
+      mail: "office@youremail.com"
     application:
       Mobile_Selling: "Mobile Selling"
   carts:
