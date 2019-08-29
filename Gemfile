@@ -21,6 +21,7 @@ gem "kaminari"
 gem "carrierwave", "1.2.2"
 gem "mini_magick", "4.7.0"
 gem "i18n-js"
+gem "font-awesome-sass", "~> 5.9.0"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

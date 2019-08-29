@@ -15,13 +15,17 @@ class LineItemsController < ApplicationController
 
   def create
     @cart = current_cart
-      product = Product.find(params[:product_id])
-      @line_item = @cart.add_product(product.id)
-    if @line_item.save
-      flash[:success] = t(".success_create")
-      redirect_to @line_item.cart
-    else
-      render :new
+    product = Product.find(params[:product_id])
+    @line_item = @cart.add_product(product.id)
+    respond_to do |format|
+      if @line_item.save
+        format.html { redirect_to( t("./"), :notice => t(".notice") }
+        format.js
+        format.json { render :show, status: :created, location: @line_item }
+      else
+        format.html { render :new }
+        format.json { render json: @line_item.errors, status: :unprocessable_entity }
+      end
     end
   end
 

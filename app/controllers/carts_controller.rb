@@ -43,7 +43,7 @@ class CartsController < ApplicationController
     @cart = current_cart
     @cart.destroy
     session[:cart_id] = nil
-    if @product.destroy
+    if @cart.destroy
       flash[:success] = t(".delete_s")
     else
       flash[:danger] = t(".delete_err")
